@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 /* =========================
    VARIABLES GLOBALES
 ========================= */
@@ -600,7 +598,7 @@ a {
 
 /*================================
 Carrusel
-=================================*/
+*/
 #carrusel-productos {
   position: relative;
 }
@@ -764,4 +762,6 @@ body {
 .carousel-btn.right {
   right: -20px;
 }
->>>>>>> Stashed changes
+=======
+    color: var(--text-dark);}
+

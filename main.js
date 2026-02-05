@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 // Bloque para efecto estrella
 (function() {
     const stars = document.querySelectorAll('.star');
@@ -26,4 +24,3 @@
         });
     });
 })();
->>>>>>> Stashed changes
