@@ -34,23 +34,77 @@ a {
 /* =========================
    NAVBAR
 ========================= */
-.navbar {
+.navbar-custom {
   background-color: var(--bg-white);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 1rem 0;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.04);
 }
 
+/* Logo */
 .navbar-brand {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 1.25rem;
   color: var(--blue-primary);
 }
 
-.nav-link {
+.navbar-brand span {
+  color: var(--blue-primary);
+}
+
+/* Links */
+.navbar-custom .nav-link {
   color: var(--gray-dark);
   font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
 }
 
-.nav-link:hover {
+.navbar-custom .nav-link:hover {
   color: var(--blue-primary);
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  padding: 0.5rem;
+}
+
+.dropdown-item {
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+  background-color: var(--blue-light);
+  color: var(--blue-primary);
+}
+
+/* Icon button (bolsa / carrito) */
+.icon-btn {
+  width: 42px;
+  height: 42px;
+  background-color: var(--bg-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dark);
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  background-color: var(--blue-primary);
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding-top: 1rem;
+    gap: 0.5rem;
+  }
 }
 
 /* =========================
